@@ -1,14 +1,15 @@
 <script>
   let menuOpen = false;
-  import logo from '../lib/assets/static/black.png';
-  
+  import logo from "../lib/assets/static/black.png";
+  import Flex from "../lib/+Flex.svelte";
+  import Grid from "../lib/+Grid.svelte";
 </script>
 
 <nav
   class="bg-white text-black w-full flex items-center justify-between h-20 lg:gap-12 lg:py-5
    lg:px-12 sm:px-4 px-2 relative"
 >
-  <div class="lg:hidden flex items-center justify-items-center ">
+  <div class="lg:hidden flex items-center justify-items-center">
     <a href="/" class="flex items-center group">
       <img
         src={logo}
@@ -18,10 +19,10 @@
     </a>
   </div>
   <ul
-    class="absolute w-full top-14 left-0  flex flex-col lg:flex-row gap-10 lg:gap-12 items-center font-['Roboto_Flex'] text-[15px] leading-5 lg:static
-    lowercase  lg:flex "
+    class="absolute w-full top-14 left-0 flex flex-col lg:flex-row gap-10 lg:gap-12 items-center font-['Roboto_Flex'] text-[15px] leading-5 lg:static
+    lowercase lg:flex"
     class:hidden={!menuOpen}
-    >
+  >
     <li>
       <div class="  items-center">
         <a href="/" class="flex items-center group">
@@ -34,8 +35,9 @@
       </div>
     </li>
     <li><a href="/">Home</a></li>
-    <li><a href="/about">About</a></li>
-    <li><a href="/services">Services</a></li>
+    <li><a href="/Flex">Flex</a></li>
+    <li><a href="/Grid">grid</a></li>
+
     <li><a href="/contact">Contact</a></li>
     <li><a href="/subscription">Subscription</a></li>
     <div class="lg:hidden px-3 w-full flex flex-col gap-2 items-center">
