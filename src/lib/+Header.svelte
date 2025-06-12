@@ -19,7 +19,7 @@
     </a>
   </div>
   <ul
-    class="absolute w-full top-14 left-0 flex flex-col lg:flex-row gap-10 lg:gap-12 items-center font-['Roboto_Flex'] text-[15px] leading-5 lg:static
+    class="absolute w-full top-14 left-0 flex flex-col lg:flex-row gap-10 lg:gap-12 pl-4 pd-4  font-['Roboto_Flex'] text-[15px] leading-5 lg:static bg-white
     lowercase lg:flex"
     class:hidden={!menuOpen}
   >
@@ -40,16 +40,16 @@
 
     <li><a href="/contact">Contact</a></li>
     <li><a href="/subscription">Subscription</a></li>
-    <div class="lg:hidden px-3 w-full flex flex-col gap-2 items-center">
+    <div class="lg:hidden   flex flex-col gap-2 items-start my-4">
       <button
-        class="w-full font-['Roboto_Flex'] text-sm whitespace-nowrap h-[40px] border-gray-300 rounded-2xl"
+        class="w-20 font-['Roboto_Flex'] text-sm whitespace-nowrap h-[40px] border-gray-300 rounded-2xl"
         style="background:#F0F0F0"
       >
         Sign in
       </button>
 
       <button
-        class="w-full font-['Roboto_Flex'] text-sm whitespace-nowrap h-[40px] border-blue-700 rounded-2xl"
+        class="w-20  font-['Roboto_Flex'] text-sm whitespace-nowrap h-[40px] border-blue-700 rounded-2xl"
         style="background: var(--def, #5C53E9);">Sign Up</button
       >
     </div>
