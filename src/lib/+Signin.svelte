@@ -6,7 +6,6 @@
   import Magic from "../lib/assets/static/magic.png";
   import Envelop from "../lib/assets/static/Envelope.png";
   import Lock from "../lib/assets/static/LockKey.png";
-  import "../app.css"; // if you have global styles
   import In from "../lib/+input.svelte";
   import InputField from "../lib/+input.svelte";
 </script>
