@@ -127,7 +127,6 @@
   .second {
     display: grid;
     grid-template-columns: repeat(3, 100px);
-    grid-template-rows: repeat(3, 100px);
     justify-content: center;
     /* justify-items: center; */
     /* rows color red */
