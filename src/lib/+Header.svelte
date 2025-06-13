@@ -41,12 +41,16 @@
 
     <li><a href="/Frame">Frame</a></li>
     <li><a href="/Noshesi">Nohesi</a></li>
+    <li><a href="/Signin">Signin</a></li>
     <div class="lg:hidden w-full  flex flex-col gap-2 items-center mb-4">
+      
       <button
         class="w-40 sm:w-50 md:w-70  font-['Roboto_Flex'] text-sm whitespace-nowrap h-[40px] border-gray-300 rounded-2xl"
         style="background:#F0F0F0"
       >
-        Sign in
+      <a href="/Signin"
+        >Sign in</a>
+        
       </button>
 
       <button
