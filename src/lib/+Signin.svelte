@@ -10,63 +10,66 @@
   import InputField from "../lib/+input.svelte";
 </script>
 
-<div class="layout">
-  <div class="card">
-    <div class="logo">
-      <img src={Logo} alt="Logo" />
-      <img src={Nohesi} alt="Nohesi" />
-    </div>
-    <div class="data">
-      <div class="one">login for the best experience</div>
-      <div class="two">
-        <button class="butn">
-          <img class="w-5 h-5" src={Google} alt="Google" />
-          <i class=" text-sm"> LOGIN VIA GOOGLE</i>
-        </button>
-        <button class="butn">
-          <img class="w-5 h-5" src={Dis} alt="Google" />
-          <i class=" text-sm"> LOGIN VIA DISCORD</i>
-        </button>
-        <button class="butn">
-          <img class="w-5 h-5" src={Magic} alt="Google" />
-          <i class=" text-sm"> LOGIN VIA MAGIC LINK</i>
-        </button>
+<div  class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-4">
+  <div class="layout">
+    <div class="card">
+      <div class="logo">
+        <img src={Logo} alt="Logo" />
+        <img src={Nohesi} alt="Nohesi" />
       </div>
-      <div class="three">
-        <span></span>
-        <p class="text-gray-400">or signin with email</p>
-        <span></span>
-      </div>
-      <div class="">
-        <InputField placeholder="Email" icon={Envelop} label="Email" />
-        <InputField placeholder="Password" label="Password" icon={Lock} />
-      </div>
-      <div>
-        <button
-          class="butn"
-          style="background: linear-gradient(0deg, #8800F0, #8800F0),
+      <div class="data">
+        <div class="one">login for the best experience</div>
+        <div class="two">
+          <button class="butn">
+            <img class="w-5 h-5" src={Google} alt="Google" />
+            <i class=" text-sm"> LOGIN VIA GOOGLE</i>
+          </button>
+          <button class="butn">
+            <img class="w-5 h-5" src={Dis} alt="Google" />
+            <i class=" text-sm"> LOGIN VIA DISCORD</i>
+          </button>
+          <button class="butn">
+            <img class="" src={Magic} alt="Google" />
+            <i class=" text-sm"> LOGIN VIA MAGIC LINK</i>
+          </button>
+        </div>
+        <div class="three">
+          <span></span>
+          <p class="text-gray-400">or signin with email</p>
+          <span></span>
+        </div>
+        <div class="">
+          <InputField placeholder="Email" icon={Envelop} label="Email" />
+          <InputField placeholder="Password" label="Password" icon={Lock} />
+        </div>
+        <div>
+          <button
+            class="butn"
+            style="background: linear-gradient(0deg, #8800F0, #8800F0),
 linear-gradient(98.82deg, rgba(91, 0, 240, 0) 0%, rgba(136, 0, 240, 0) 100%);
 border:none;
 "
-        >
-          <i class=" text-sm"> SIGN IN</i>
-        </button>
-      </div>
-      <div>
-        <div class="three text-gray-400">
-          <p class="text-gray-400">Don't have an account?</p>
-          <a href="/Signup" class="underline text-sm text-gray-400">Sign Up</a>
+          >
+            <i class=" text-sm"> SIGN IN</i>
+          </button>
+        </div>
+        <div>
+          <div class="three text-gray-400">
+            <p class="text-gray-400">Don't have an account?</p>
+            <a href="/Signup" class="underline text-sm text-gray-400">Sign Up</a
+            >
+          </div>
         </div>
       </div>
-    </div>
-    <div class="text-gray-400">
-      <p>
-        By signing in, you agree to our <a href="/terms" class="underline"
-          >Terms of Service</a
-        >
-        and acknowlege having read our
-        <a href="/privacy" class="underline">Privacy Policy</a>.
-      </p>
+      <div class="text-gray-400">
+        <p>
+          By signing in, you agree to our <a href="/terms" class="underline"
+            >Terms of Service</a
+          >
+          and acknowlege having read our
+          <a href="/privacy" class="underline">Privacy Policy</a>.
+        </p>
+      </div>
     </div>
   </div>
 </div>
@@ -75,7 +78,7 @@ border:none;
   .layout {
     background: rgb(14, 12, 16);
     height: 100vh;
-    width: 476px;
+    /* width: 476px; */
     padding: 30px 36px 30px 36px;
   }
 
@@ -105,7 +108,7 @@ border:none;
   }
 
   .one {
-    width: 404px;
+    width: 100%;
     height: 72px;
 
     background: rgb(14, 12, 16);
@@ -138,7 +141,7 @@ border:none;
     display: flex;
     flex-direction: column;
     gap: 6px;
-    width: 404px;
+    width: 100%;
   }
 
   .butn {
