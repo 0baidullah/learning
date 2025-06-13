@@ -1,6 +1,5 @@
 <script>
   import img1 from "../lib/assets/static/download.jpeg";
-  console.log(window.innerWidth, window.innerHeight);
 </script>
 
 <div
